@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "buildCpp": "emcc ./cpp/main.cpp -o ./cpp/output/index.html",
-    "start": "node ./server/app.js"
+    "buildCpp": "emcc ./cpp/main.cpp -o ./js/output/index.html",
+    "start": "node ./js/app.js"
   },
   "author": "",
   "license": "ISC",

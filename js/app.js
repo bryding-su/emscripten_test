@@ -3,11 +3,12 @@ const app = express()
 const port = 3000
 
 const path = require('path');
-app.use('/static', express.static(path.join(__dirname, '/..cpp/output')));
+
+// app.set('appPath', 'output');
+app.use(express.static(__dirname + '/output'));
 
 app.get('*', function(req, res){
-  res.sendFile(path.join(__dirname + '/build/index.html'));
-  //__dirname : It will resolve to your project folder.
+  res.sendFile(__dirname + '/output' + '/index.html');
 });
 
 var server = app.listen(1956, function (req, res) {

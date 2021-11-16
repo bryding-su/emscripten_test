@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "buildWasm": "emcc ./cpp/main.cpp --no-entry -O1 -s WASM=1 -s EXPORTED_FUNCTIONS=['_Increment'] -o ./js/output.wasm -s NO_EXIT_RUNTIME=0",
+    "buildWasm": "emcc ./cpp/main.cpp -g --no-entry -O1 -s WASM=1 -s EXPORTED_FUNCTIONS=['_Increment'] -o ./js/output.wasm -s NO_EXIT_RUNTIME=0",
     "start": "node ./js/app.js"
   },
   "author": "",

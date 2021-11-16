@@ -1,0 +1,15 @@
+{
+  "name": "emscripten_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildCpp": "emcc ./cpp/main.cpp -o ./cpp/output/index.html",
+    "start": "node ./server/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

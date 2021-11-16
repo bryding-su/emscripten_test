@@ -1,7 +1,7 @@
-#include <stdio.h>
-
-int main(int argc, char* argv[])
+extern "C"
 {
-    printf("Hello, everyone!");
-    return 0;
+    int Increment(int value)
+    {
+        return (value + 1);
+    }
 }

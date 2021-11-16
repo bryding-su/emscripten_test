@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "buildCpp": "emcc ./cpp/main.cpp -o ./js/output/index.html",
+    "buildWasm": "emcc ./cpp/main.cpp --no-entry -O1 -s WASM=1 -s EXPORTED_FUNCTIONS=['_Increment'] -o ./js/output.wasm -s NO_EXIT_RUNTIME=0",
     "start": "node ./js/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }

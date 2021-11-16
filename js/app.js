@@ -5,10 +5,12 @@ const port = 3000
 const path = require('path');
 
 // app.set('appPath', 'output');
-app.use(express.static(__dirname + '/output'));
+app.use(express.static(__dirname));
+
+express.static.mime.define({ 'application/wasm': ['wasm'] });
 
 app.get('*', function(req, res){
-  res.sendFile(__dirname + '/output' + '/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 var server = app.listen(1956, function (req, res) {

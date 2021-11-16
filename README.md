@@ -8,7 +8,7 @@ _Note: Requires Python 3_
 ### Building the Wasm
 
 1. Ensure that emsdk is activated and the ./emsdk_env.sh has been run, which was explained in Installation step 1.
-2. Run `npm run buildCpp`
+2. Run `npm run buildWasm`
 
 - Output files should appear in /js/output
 

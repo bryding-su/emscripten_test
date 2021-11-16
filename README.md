@@ -15,4 +15,5 @@ _Note: Requires Python 3_
 ### Running the server
 
 1. Run `npm run start`
-2. Navigate to localhost:1956 in your browser
+
+3. Navigate to localhost:1956 in your browser
